@@ -1,6 +1,3 @@
-
-
-
 let currentQuestion = 1;
 const totalQuestions = 4; 
 const answers = {};
