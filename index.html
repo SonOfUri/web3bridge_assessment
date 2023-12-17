@@ -1,74 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timothy's Quiz App</title>
+    <title>Timothy Quiz App</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Timothy's Quiz Application</h1>
-  
-    <form id="quizForm">
-      <fieldset>
-        <legend>Question 1</legend>
-        <label>
-          <input type="radio" name="q1" value="a"> Option A
-        </label>
-        <label>
-          <input type="radio" name="q1" value="b"> Option B
-        </label>
-        <label>
-          <input type="radio" name="q1" value="c"> Option C
-        </label>
-      </fieldset>
-  
-      <fieldset>
-        <legend>Question 2</legend>
-        <label>
-          <input type="radio" name="q1" value="a"> Option A
-        </label>
-        <label>
-          <input type="radio" name="q1" value="b"> Option B
-        </label>
-        <label>
-          <input type="radio" name="q1" value="c"> Option C
-        </label>
-      </fieldset>
 
-      <fieldset>
-        <legend>Question 3</legend>
-        <label>
-          <input type="radio" name="q1" value="a"> Option A
-        </label>
-        <label>
-          <input type="radio" name="q1" value="b"> Option B
-        </label>
-        <label>
-          <input type="radio" name="q1" value="c"> Option C
-        </label>
-      </fieldset>
+    <div id="quiz-container">
+        <h2> Timothy Quiz App </h2>
+        <p>Answers: 1.A || 2.B || 3.C || 4.D</p>
+        <div class="question-container" id="question1">
+            <h3>Question 1: What is the capital of Nigeria?</h3>
+            <label>
+                <input type="radio" name="q1" value="a"> a) Abuja
+            </label>
+            <label>
+                <input type="radio" name="q1" value="b"> b) Rome
+            </label>
+            <label>
+                <input type="radio" name="q1" value="c"> c) Italy
+            </label>
+            <label>
+                <input type="radio" name="q1" value="d"> d) India
+            </label>
 
-      <fieldset>
-        <legend>Question 4</legend>
-        <label>
-          <input type="radio" name="q1" value="a"> Option A
-        </label>
-        <label>
-          <input type="radio" name="q1" value="b"> Option B
-        </label>
-        <label>
-          <input type="radio" name="q1" value="c"> Option C
-        </label>
-      </fieldset>
-  
-     
-  
-      <button type="button" onclick="submitQuiz()">Submit</button>
-    </form>
+        </div>
 
-    <script src="app.js"></script>
+        <div class="question-container" id="question2">
+            <h3>Question 2: What is the name of the president of Nigeria?</h3>
+            <label>
+                <input type="radio" name="q2" value="a"> a) Timothy
+            </label>
+            <label>
+                <input type="radio" name="q2" value="b"> b) Bola Tinubu
+            </label>
+            <label>
+                <input type="radio" name="q2" value="c"> c) Timothy
+            </label>
+            <label>
+                <input type="radio" name="q2" value="d"> d) Timothy
+            </label>
+
+        </div>
+
+        <div class="question-container" id="question3">
+            <h3>Question 3: Which of the following is <strong>NOT</strong> a programming language?</h3>
+            <label>
+                <input type="radio" name="q3" value="a"> a) C++
+            </label>
+            <label>
+                <input type="radio" name="q3" value="b"> b) Python
+            </label>
+            <label>
+                <input type="radio" name="q3" value="c"> c) Egusi Soup
+            </label>
+            <label>
+                <input type="radio" name="q3" value="d"> d) Ruby
+            </label>
+
+        </div>
+
+        <div class="question-container" id="question4">
+            <h3>Question 4: Who built this app?</h3>
+            <label>
+                <input type="radio" name="q4" value="a"> a) Tinubu
+            </label>
+            <label>
+                <input type="radio" name="q4" value="b"> b) Peter Obi
+            </label>
+            <label>
+                <input type="radio" name="q4" value="c"> c) Atiku
+            </label>
+            <label>
+                <input type="radio" name="q4" value="d"> d) Timothy
+            </label>
+
+        </div>
+
+        <br><br><br><br><br>
+        <div class="btns">
+            <button onclick="prevQuestion()" id="prevBtn" class="green" style="display:none">Previous</button>
+            <button onclick="submitQuiz()" class="red">Submit</button>
+            <button onclick="nextQuestion()" class="green">Next</button>
+            <button onclick="showFinalResult()" id="finalResultBtn" style="display:none">Show Final Result</button>
+        </div>
+
+    </div>
+
+    <script src="testquestions.js"></script>
+
 </body>
-</html>
 
+</html>

@@ -1,4 +1,51 @@
-label {
-    display: block;
-    margin-bottom: 10px;
-  }
+
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+      
+    }
+    .question-container {
+      display: none;
+    
+    }
+    .result-container {
+      margin-top: 10px;
+    }
+
+    label{
+      display: block;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    #quiz-container{
+      border: 1px dotted black;
+      padding: 10px;
+      border-radius: 2px;
+      text-align: center;
+    }
+
+    .question-container > h3{
+      text-align: left;
+    }
+
+    button{
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .btns{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .red{
+      background-color: red;
+      color: white;
+    }
+
+    .green{
+      background-color: green;
+      color: white;
+    }
