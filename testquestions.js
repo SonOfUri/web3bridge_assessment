@@ -1,11 +1,14 @@
+
+
+
 let currentQuestion = 1;
 const totalQuestions = 4; 
 const answers = {};
 const correctAnswers = {
   q1: 'a',
   q2: 'b',
-  q3: 'c',
-  q4: 'd',
+  q3: 'b',
+  q4: 'c',
 };
 
 function showQuestion(questionNumber) {
